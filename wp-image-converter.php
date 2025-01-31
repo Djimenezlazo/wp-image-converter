@@ -17,7 +17,7 @@ require_once plugin_dir_path(__FILE__) . 'includes/class-wp-image-converter.php'
 require_once plugin_dir_path(__FILE__) . 'includes/class-wpic-image-replacer.php';
 require_once plugin_dir_path(__FILE__) . 'includes/settings.php';
 
-// Inicializar el plugin
+
 function wpic_init() {
     new WP_Image_Converter();
     if (!is_admin()) {
@@ -26,13 +26,13 @@ function wpic_init() {
 }
 add_action('plugins_loaded', 'wpic_init');
 
-// Cargar estilos y scripts
+
 function wpic_enqueue_admin_assets($hook) {
     if ($hook === 'tools_page_conversor-imagenes-wp') {
         wp_enqueue_style('wpic-admin-styles', plugin_dir_url(__FILE__) . 'assets/css/admin-styles.css');
         wp_enqueue_script('wpic-admin-scripts', plugin_dir_url(__FILE__) . 'assets/js/admin-scripts.js', ['jquery'], null, true);
 
-        // Pasar variables PHP a JavaScript
+
         wp_localize_script('wpic-admin-scripts', 'wpic_vars', [
             'webp_supported' => function_exists('imagewebp'),
             'avif_supported' => function_exists('imageavif'),
