@@ -1,0 +1,48 @@
+/* Estilos generales */
+.wpic-admin {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.wpic-admin h1 {
+    color: #23282d;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.wpic-admin .form-table th {
+    width: 250px;
+    font-weight: 600;
+}
+
+.wpic-admin input[type="range"] {
+    width: 100%;
+}
+
+.wpic-admin input[type="number"] {
+    width: 100px;
+}
+
+.wpic-admin .description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.wpic-admin .notice {
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 4px solid #ffb900;
+}
+
+.wpic-admin .notice.notice-error {
+    border-left-color: #dc3232;
+}
+
+.wpic-admin .submit {
+    margin-top: 20px;
+}
