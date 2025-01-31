@@ -55,12 +55,12 @@ jQuery(document).ready(function($) {
 });
 
 jQuery(document).ready(function($) {
-    // Función para habilitar/deshabilitar inputs
+
     function toggleInputs() {
         var isEnabled = $('#wpic_enabled').is(':checked');
         $('#wpic_format, #quality-slider, #wpic_max_size, #wpic_replace_url, #wpic_add_dimensions').prop('disabled', !isEnabled);
 
-        // Desmarcar checkbox si el plugin está desactivado
+
         if (!isEnabled) {
             $('#wpic_replace_url, #wpic_add_dimensions, #wpic_replace_url, #quality-slider').prop('checked', false);
         }else{
@@ -70,9 +70,7 @@ jQuery(document).ready(function($) {
         }
     }
 
-    // Escuchar cambios en el checkbox "Habilitar conversión"
     $('#wpic_enabled').on('change', toggleInputs);
 
-    // Ejecutar al cargar la página
     toggleInputs();
 });

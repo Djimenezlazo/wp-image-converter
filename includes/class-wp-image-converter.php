@@ -93,13 +93,13 @@ class WP_Image_Converter {
 	}
 
     public function convert_image($metadata, $attachment_id) {
-	    // Verificar si la conversión está habilitada
+
 	    if (!get_option('wpic_enabled', 1)) {
 	        return $metadata;
 	    }
 	
 	    $file_path = get_attached_file($attachment_id);
-	    $file_size = filesize($file_path) / 1024 / 1024; // Tamaño en MB
+	    $file_size = filesize($file_path) / 1024 / 1024;
 	    $max_size = get_option('wpic_max_size', 5);
 	
 	    if ($file_size > $max_size) {
