@@ -74,17 +74,6 @@ Si encuentras algún problema o tienes alguna pregunta, por favor:
 
 ---
 
-## Contribuciones
-
-¡Las contribuciones son bienvenidas! Si deseas mejorar el plugin, sigue estos pasos:
-1. Haz un fork del repositorio.
-2. Crea una rama para tu contribución (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
-4. Sube los cambios a tu repositorio (`git push origin feature/nueva-funcionalidad`).
-5. Abre un **Pull Request** en GitHub.
-
----
-
 ## Licencia
 
 Este plugin es de código abierto y está licenciado bajo la [Licencia MIT](LICENSE).
